@@ -1,0 +1,7 @@
+Download antlr parser from here and runtime libraries from here:
+https://www.antlr.org
+
+Then run:
+antlr4 -Dlanguage=Python3 -visitor -o Python/ MLTLM.g4
+
+To stay uptodate with the latest parsers

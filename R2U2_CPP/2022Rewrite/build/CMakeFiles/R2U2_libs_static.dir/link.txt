@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libR2U2_libs_static.a  CMakeFiles/R2U2_libs_static.dir/CircularBuffer.cpp.o CMakeFiles/R2U2_libs_static.dir/R2U2.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libR2U2_libs_static.a

@@ -1,0 +1,4 @@
+/Users/gokul/Nok/r2u2ref/r2u2/R2U2_CPP/2022Rewrite/build/CMakeFiles/rebuild_cache.dir
+/Users/gokul/Nok/r2u2ref/r2u2/R2U2_CPP/2022Rewrite/build/CMakeFiles/edit_cache.dir
+/Users/gokul/Nok/r2u2ref/r2u2/R2U2_CPP/2022Rewrite/build/CMakeFiles/R2U2.out.dir
+/Users/gokul/Nok/r2u2ref/r2u2/R2U2_CPP/2022Rewrite/build/CMakeFiles/R2U2_libs_static.dir

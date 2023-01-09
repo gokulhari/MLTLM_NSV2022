@@ -1,0 +1,40 @@
+The main code is MLTLM.g4. Needs Antlr4.
+
+export CLASSPATH=".:/usr/local/lib/antlr-4.9.2-complete.jar:$CLASSPATH"
+alias antlr4='java -jar /usr/local/lib/antlr-4.9.2-complete.jar'
+alias grun='java org.antlr.v4.gui.TestRig'
+
+To compile, call the following; for CPP:
+antlr4 -Dlanguage=Cpp -visitor -o CPP/ MLTLM.g4
+
+for Python:
+antlr4 -Dlanguage=Python3 -visitor -o Python/ MLTLM.g4
+
+Antlr4 creates parse trees, which can be directly used to extract all the entities inside the formula file.
+
+For the C++ version, I use a cmake file.
+The cmake file makes two libraries: libMLTLM_static.a, and libantlr4_static.a. 
+The libantlr4_static is compiled only from antlr sources. 
+The libMLTLM_static is compiled only using the MLTLM*.cpp in this directory.
+The static means that the libraries are static (appended at compile time) 
+and not shared i.e., not called during runtime. 
+
+The way to make a full compile is to create a new directory, build. Then say "cmake .." in the build directory.
+You can also use the "ccmake .." to use the GUI.
+You may need to manually specify the absolute directory of where your antlr distribution is using, e.g., 
+
+cmake -DANTLR_SOURCE_DIR="/Users/gokul/Nok/antlr4-4.9.2/" ..
+
+or simply change the field set(ANTLR_SOURCE_DIR "/Users/gokul/Nok/antlr4-4.9.2/") in the CMakeLists.txt file.
+
+After executing cmake .., hit make inside the build directory and your files should compile. 
+
+The files use minimum C++11 standard, this is because antlr4 sources use the same.
+
+clang-format -i *.cpp -style='{BasedOnStyle: llvm, Standard: Cpp11}'
+
+Use the test.MLTLM to see test cases.
+
+export CLASSPATH=".:/usr/local/lib/antlr-4.9.2-complete.jar:$CLASSPATH"
+alias antlr4='java -jar /usr/local/lib/antlr-4.9.2-complete.jar'
+alias grun='java org.antlr.v4.gui.TestRig'

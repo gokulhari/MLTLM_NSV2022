@@ -1,0 +1,29 @@
+--- Time: 1 ---
+PC: 3 ATOM = [1 true ] 
+PC: 3 ATOM = [1 false] 
+PC: 3 AND = [1 false] 
+
+--- Time: 2 ---
+PC: 3 ATOM = [2 false] 
+PC: 3 ATOM = [2 true ] 
+PC: 3 AND = [2 false] 
+
+--- Time: 3 ---
+PC: 3 ATOM = [3 true ] 
+PC: 3 ATOM = [3 true ] 
+PC: 3 AND = [3 true ] 
+
+--- Time: 4 ---
+
+--- Time: 5 ---
+
+--- Time: 6 ---
+
+--- Time: 7 ---
+
+--- Time: 8 ---
+
+--- Time: 9 ---
+
+--- Time: 10 ---
+
